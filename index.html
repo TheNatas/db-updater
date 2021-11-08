@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Document</title>
+</head>
+<body>
+  
+  <form action="/" method="post" enctype="text/plain">
+    <input type="text" placeholder="Descreva a tarefa aqui" name="description">
+    <button type="submit" id="btn-submit">Adicionar Tarefa</button>
+  </form>
+
+  <table>
+    <thead>
+      <th>Código</th>
+      <th>Descrição</th>
+      <th>Data</th>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+
+  <!-- <script>
+    document.querySelector('form').addEventListener('submit', function(e){
+      e.preventDefault();
+
+      const request = new XMLHttpRequest();
+      request.open('POST', '/');
+      request.responseType = '';
+      request.onreadystatechange = function(){
+        if (this.readyState === request.DONE){
+          console.log(request.getAllResponseHeaders())
+        }
+      };
+      request.send(this.querySelector('input').value);
+
+    })
+  </script> -->
+</body>
+</html>
